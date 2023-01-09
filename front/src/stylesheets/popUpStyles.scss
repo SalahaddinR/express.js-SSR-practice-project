@@ -1,0 +1,135 @@
+.cartPopUp {
+    position: absolute;
+    top: 150px; right: 200px;
+    width: 340px; display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: flex-start;
+    gap: 20px; z-index: 10;
+    background-color: #fff;
+    padding: 20px 0; 
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+
+    .cartPopUpClose{
+        position: absolute;
+        right: 20px;top: 5px;
+        background-color: transparent;
+        font-size: 14px; color: #EB4037;
+        font-weight: 600;
+    }
+
+    .cartPopUpHeader {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px; padding: 0 20px;
+
+        h2 {
+            font-size: 18px;
+        }
+        .description {
+            font-size: 12px;
+            color: #8C8C8C;
+        }
+        .headerRedirectBtn {
+            color: #EB4037;
+            border: 1px solid #EB4037;
+            border-radius: 10px;
+            width: 200px; height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+        }
+    }
+
+    .cartPopUpProducts {
+        display: flex;
+        flex-direction: column;
+        justify-items: flex-start;
+        align-items: flex-start;
+        width: 100%;
+
+        .cartProduct {
+            width: 100%; display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+            align-items: center;
+            border-bottom: 1px solid rgba(0,0,0,0.2);
+            padding: 10px;
+
+            span {
+                font-size: 13px;
+            }
+
+            &:nth-child(1) {
+                border-top: 1px solid rgba(0,0,0,0.2);
+            }
+
+            .productImageCart {
+                width: 100px; height: 100px;
+            }
+        }
+
+        .moreProducts {
+            font-size: 12px;
+            align-self: center;
+        }
+    }
+
+    .totalPrice {
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .totalPriceLabel {
+            color: gray;
+            font-size: 14px;
+        }
+        .totalPriceValue {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .purchaseBtn {
+        align-self: center;
+        width: 80%; 
+        padding: 20px;
+        font-size: 16px;
+        background-color: #EB4037;
+        border-radius: 10px;
+        color: #fff;
+    }
+}
+
+.accountPopUp {
+    display: flex; position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px; padding: 30px;
+    background-color: #fff;
+    position: absolute; z-index: 10;
+    top: 150px; right: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px; width: 300px;
+
+    .accountPopUpClose {
+        position: absolute;
+        background-color: transparent;
+        top: 5px; right: 10px;
+        color: #EB4037;
+        font-weight: 600;
+        font-size: 14px;
+    }
+
+    .accountItem {
+        background-color: transparent;
+    }
+}

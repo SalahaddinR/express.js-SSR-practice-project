@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eurotek</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./stylesheets.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+
+<body>
+    <header class="upperPannel">
+        <div class="pannelUpper">
+            <div class="container" id="left">
+                <span class="element" id="workDays"></span>
+                <span class="element" id="workHours"></span>
+            </div>
+            <div class="container" id="right">
+                <nav class="main-navigation">
+                    <a href="" class="nav-item" id="itemDelivery">Доставка и Оплата</a>
+                    <a href="" class="nav-item" id="itemWarrant">Гарантия</a>
+                    <a href="" class="nav-item" id="itemContact">Контакты</a>
+                    <a href="" class="nav-item" id="itemDiscount">Акции</a>
+                </nav>
+                <span class="element">
+                    <span class="icon material-symbols-outlined" id="phoneIcon">call</span>
+                    <span class="element" id="phoneNumber"></span>
+                </span>
+            </div>
+        </div>
+        <div class="pannelLower">
+            <img alt="" class="image" id="logo">
+            <div class="search-group">
+                <input type="text" id="fieldSearch" class="text-field" placeholder="Поис товаров по сайту">
+                <button class="searchBtn  material-symbols-outlined">search</button>
+            </div>
+            <div class="cart-group">
+                <div class="cart-element">
+                    <span class="icon material-symbols-outlined">shopping_cart</span>
+                    <span class="count">0</span>
+                </div>
+                <div class="cart-content">
+                    <span>Корзинка</span>
+                    <span class="totalPrice"></span>
+                </div>
+                <button class="profile material-symbols-outlined">person</button>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" id="banner-01"></div>
+            <div class="swiper-slide" id="banner-02">Высококачественные приборы Европейского стандарта</div>
+            <div class="swiper-slide" id="banner-03">Кухонные приборы подходящий под ваш интерьер</div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <section class="catalogue" id="catalog">
+        <header class="title">
+            <h2>Каталог товаров</h2>
+            <span>Более 1000 товаров</span>
+        </header>
+        <section class="catelogue-content"></section>
+    </section>
+
+
+    <section class="features">
+        <header class="title">
+            <h2>Покупать в магазине “Сантехники”  - это</h2>
+            <span>преимущества работы с нами</span>
+        </header>
+        <div class="features-content">
+            <div class="feature">
+                <img alt="" class="icon" id="featureImage01">
+                <h3 class="title">Выгодно</h3>
+                <span class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов</span>
+            </div>
+            <div class="feature">
+                <img alt="" class="icon" id="featureImage02">
+                <h3 class="title">Удобно</h3>
+                <span class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов</span>
+            </div>
+            <div class="feature">
+                <img alt="" class="icon" id="featureImage03">
+                <h3 class="title">Безопасно</h3>
+                <span class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="aboutus">
+        <div class="left-content">
+            <h2 class="message">Мы рады приветствовать вас на нашем сайте!</h2>
+            <div class="content">
+                <header class="title">Выбирайте комфортную и практичную сантехнику и воплощайте самые смелые планы</header>
+                <p class="text">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает</p>
+                <a href="" class="detailBtn">Подробнее о компании</a>
+            </div>
+        </div>
+        <div class="right-content"></div>
+    </section>
+
+    <section class="contactus">
+        <div class="content">
+            <h2>Нужна консультация?</h2>
+            <p>Наши сотрудники свяжутся с вами и окажут консултацию бесплатно, помогут с выбором нужных товаров</p>
+        </div>
+        <div class="form-group" id="consultationData">
+            <div class="input-group">
+                <label for="nameData">Ваше имя</label>
+                <input type="text" name="name" id="nameData" class="textField" placeholder="Шамиль Искахаков">
+            </div>
+            <div class="input-group">
+                <label for="phoneData">Ваш номер телефона</label>
+                <input type="text" name="phone" id="phoneData" class="textField" placeholder="+7(928) 500-00-00">
+            </div>
+            <button type="submit" class="submitConsultDBtn">Отправить</button>
+        </div>
+    </section>
+
+    <footer class="lowerPannel">
+        <div class="pannelUpper">
+            <img alt="" id="logo">
+            <div class="footercatalog">
+                <h2>Наш каталог</h2>
+                <div class="sections">
+                    <div class="section">
+                        <a href="" class="item">Сантехника</a>
+                        <a href="" class="item">Отопление</a>
+                        <a href="" class="item">Насосы</a>
+                        <a href="" class="item">Водоногреватели</a>
+                        <a href="" class="item">Инструменты</a>
+                        <a href="" class="item">Фильтры</a>
+                    </div>
+                    <div class="section">
+                        <a href="" class="item">Сантехника</a>
+                        <a href="" class="item">Отопление</a>
+                        <a href="" class="item">Насосы</a>
+                        <a href="" class="item">Водоногреватели</a>
+                        <a href="" class="item">Инструменты</a>
+                        <a href="" class="item">Фильтры</a>
+                    </div>
+                    <div class="section">
+                        <a href="" class="item">Сантехника</a>
+                        <a href="" class="item">Отопление</a>
+                        <a href="" class="item">Насосы</a>
+                        <a href="" class="item">Водоногреватели</a>
+                        <a href="" class="item">Инструменты</a>
+                        <a href="" class="item">Фильтры</a>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts">
+                <span class="address"></span>
+                <span class="phone"></span>
+                <span class="workdays"></span>
+                <span class="email"></span>
+            </div>
+        </div>  
+        <div class="pannelLower">
+            <div class="content-left">© 2023 ИП Рузиев С.К   ИНН05610323233  Все права защищены.</div>
+            <img alt="" id="payments">
+            <div class="content-right">Сайт разработан в Учебно-Практических целях!</div>
+        </div>
+        
+    </footer>
+</body>
+
+</html> 
